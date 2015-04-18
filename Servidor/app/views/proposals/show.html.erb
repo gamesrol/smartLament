@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @proposal.user_id %>
+</p>
+
+<p>
+  <strong>T&iacute;tulo:</strong>
+  <%= @proposal.title %>
+</p>
+
+<p>
+  <strong>Objetivo:</strong>
+  <%= @proposal.object %>
+</p>
+
+<p>
+  <strong>Finalidad:</strong>
+  <%= @proposal.finality %>
+</p>
+
+<p>
+  <strong>&Aacute;mbito:</strong>
+  <%= @proposal.scope.name %>
+</p>
+
+<p>
+  <strong>Tem&aacute;tica:</strong>
+  <%= @proposal.subject.name %>
+</p>
+
+<%= link_to 'Editar', edit_proposal_path(@proposal) %> |
+<%= link_to 'Volver', proposals_path %>

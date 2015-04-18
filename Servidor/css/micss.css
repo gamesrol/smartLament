@@ -1,0 +1,64 @@
+div.indicetareas {
+    float: left;
+    background-color: #F8F8F8;
+    border-radius: 25px;
+    width: 25%;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+div.indicetareas div{
+    position: relative;
+    padding: 10px 0 10px 10px;
+    height:100%;
+}
+
+div.indicetareas div:hover{
+    background-color: #EEE;
+    padding: 10px 0 10px 10px;
+    height:100%;
+}
+
+div.tareas {
+    background-color: #F8F8F8;
+    float: left;
+    margin-left: 1%;
+    border-radius: 25px;
+    padding: 10px 0 10px 10px;
+    width: 74%;
+    height: 100%;
+}
+
+
+div.contacto {
+    background-color: #F8F8F8;
+    border-radius: 25px;
+    padding: 10px 5px 10px 10px;
+    margin: 8px 0 8px 0;
+    width: 100%;
+    float: left;
+}
+
+div.contacto:hover {
+    background-color: #EEE;
+}
+
+div.agendauser {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    margin: 0px 10px 10px 10px;  
+}
+
+div.agendatlf, div.agendaemail, div.agendaext {
+    float: left;
+    margin: 0px 10px 0px 10px;
+    text-align: left;
+}
+
+div.agendaedicion {
+    float: right;
+    margin: 0px 10px 0px 10px;    
+}

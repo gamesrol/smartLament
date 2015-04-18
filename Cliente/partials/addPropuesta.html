@@ -1,0 +1,30 @@
+<div class="row">
+	<div class="col-lg-12">
+	    <center><a href="#/propuestas"><img class="iconsSocial" src="/img/addpropuesta.png" /></a></center>
+        <div class="field">
+            <input id="proposal_title" name="proposal[title]" type="text" class="nombreAndir" ng-model="proposal.title" placeholder="Titulo"/>
+        </div>
+        <div class="field">
+            <label for="proposal_object" class="addPropuesta">Objetivo</label><br>
+            <textarea id="proposal_object" name="proposal[object]" ng-model="proposal.object" type="text" placeholder="Aqu&iacute; su texto..." class="addPropuesta"></textarea>
+        </div>
+        <div class="field">
+            <label for="proposal_finality" class="addPropuesta">Finalidad</label><br>
+            <textarea id="proposal_finality" name="proposal[finality]" ng-model="proposal.finality" placeholder="Aqu&iacute; su texto..." class="addPropuesta"></textarea>
+        </div>
+        <div class="field">
+            <select id="proposal_scope_id" name="proposal[scope_id]"  ng-model="proposal.scope" ng-options="scope.name for scope in scopes">
+                <option value="">Seleccionar un &aacute;mbito</option>
+            </select>
+        </div>
+        <div class="field">
+            <select id="proposal_subject_id" name="proposal[subject_id]" ng-model="proposal.subject" ng-options="subject.name for subject in subjects">
+                <option value="">Seleccionar una tem&aacute;tica</option>
+            </select>
+        </div>
+        <div class="actions">
+            <button name="commit" type="submit" ng-click="create()" class="enviar" ng-disabled="!proposal.title || !proposal.object || !proposal.finality || !proposal.scope || !proposal.subject">Proponer</button>
+            <p ng-if="!proposal.title || !proposal.object || !proposal.finality || !proposal.scope || !proposal.subject"><font color="red">*</font><span>Rellena todos los campos</span></p>
+        </div>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @subject.name %>
+</p>
+
+<%= link_to 'Editar', edit_subject_path(@subject) %> |
+<%= link_to 'Volver', subjects_path %>

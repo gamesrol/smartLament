@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  title: MyString
+  object: MyString
+  finality: MyString
+  scope_id: 
+  subject_id: 
+
+two:
+  user_id: 
+  title: MyString
+  object: MyString
+  finality: MyString
+  scope_id: 
+  subject_id: 
